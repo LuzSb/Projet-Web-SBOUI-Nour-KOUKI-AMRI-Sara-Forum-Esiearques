@@ -1,0 +1,31 @@
+!!!
+%html
+%head
+  %title Forum Esiearque
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+  %link{ rel: "stylesheet", href: "http://fonts.googleapis.com/css?family=Lato:300,400,700", type: "text/css"}
+  %link{:rel => "stylesheet", :href => "http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css"}
+  %link{:rel => "stylesheet", href: "https://fonts.googleapis.com/css?family=Indie+Flower", type:"text/css"}
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = csrf_meta_tags
+%body
+  %header.main_header.clearfix
+    .wrapper
+    %div
+    #logo
+      %h1= link_to "- Forum Esiearque -", root_path #ajoute un lien vers l'accueil
+      %p Un forum de et pour Esiearques! Posez des questions, cherchez des cours ,... et si vous avez des liens/cours utiles publiez-les!
+    #buttons
+      - if user_signed_in? #si l'utilisateur est déjà connecté donc il aura la page où il peut publier ses postes
+        = link_to "New Post", new_post_path
+      - else  #sinon il doit se connecter tout d'abord (malheureusement on n'a pas pu activer la récupération du code si un utilisateur a oublié son mot de passe)
+        = link_to "Sign Up", new_user_registration_path, id:"buttons"
+        = link_to "Sign In", new_user_session_path, id:"buttons" 
+  .wrapper   
+    %p.notice= notice
+    %p.alert= alert
+
+  .wrapper
+    = yield
+
+

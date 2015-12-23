@@ -13,3 +13,142 @@
  *= require_tree .
  *= require_self
  */
+body {
+ 	font-family: 'Lato', sans-serif;
+ 	background: #1E90FF;
+}
+.wrapper {
+	width: 60%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.clearfix:before, .clearfix:after {
+	content: : " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.main_header #buttons {
+    float: right;
+    line-height: 60px;
+	background: #DC143C;
+    border-radius: .5em;
+    bottom: 0px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px;
+}
+.main_header {
+	width: 100%;
+}
+#logo h1 {
+    text-align: center;
+	text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    font-size: 1.5rem;
+}
+#logo p {
+	text-align: center;
+	font-size: 1.5em;
+}
+#posts {
+	background: white;
+    border-radius: 5px;
+}
+#logo {
+	background: white;
+    border-radius: : 5px;
+    margin: 10px;
+    color: #1E90FF;
+    font-family: 'Indie Flower', cursive;
+}	
+a { 
+	margin: 50px;
+	color:  black;
+	text-decoration: none;
+	font-size: 30px;
+	font-family: 'Indie Flower', cursive;
+}
+.date {
+	font-size: 0.9rem;
+	color: #1E90FF;
+	margin: 50px;
+}
+.post {
+	border-bottom:  1px solid #1E90FF
+}
+#post_content {
+    background: white;
+    border-radius: 5px;	
+}
+#post_content h1 {
+	font-weight: 100;
+	font-size: 50px;
+	color: #1E90FF;
+	font-family: 'Indie Flower', cursive;
+	text-align: center;
+}
+#post_content p {
+	margin: 20px;
+}
+#post_content a {
+	font-size: 25px;
+    background: #DC143C;
+    border-radius: .5em;
+}
+.comment_replier {
+    color: 	#1E90FF;
+    font-size: 20px;
+}
+.wrapper h1 {
+    color: white;
+    font-family: 'Indie Flower', cursive;	
+}
+.comment_content {
+	margin: 0;
+	padding: 0
+}
+.comment{
+	border-bottom: 1px solid #1E90FF;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+.content {
+	width: 70%;
+	float: left;
+}
+textarea {
+	margin-left: 20px;
+	min-height: 180px;
+	border: 1px solid #1E90FF;
+	border-radius:  .2em;
+	width: 95%;
+}
+input[type="submit"] {
+	background: #1E90FF;
+	color: white;
+	padding: .5em 1em;
+	border-radius:  .2em;
+}
+#comments h3 {
+	margin-left: 20px;
+	color: #1E90FF;
+	font-family: 'Indie Flower', cursive;
+	font-size: 30px;
+}
+#comments h2 {
+	margin-left: 20px;
+	color: grey;
+}
+.optional {
+font-family: 'Indie Flower', cursive;	
+font-size: 25px;
+}
+.wrapper a{
+    font-size: 25px;
+    background: #DC143C;
+    border-radius: .5em;
+}
+/*fin du code qui sert à styler l'application "front end"*/
