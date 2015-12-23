@@ -1,0 +1,6 @@
+%h1= @post.title
+%p= @post.content
+
+= link_to "Modifier", edit_post_path(@post) #l'utilisateur peut modifier sa publication
+= link_to "Supprimer", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to do this?" } #il peut aussi la supprimer
+= link_to "Accueil", root_path #retour à l'accueil
