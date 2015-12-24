@@ -2,6 +2,12 @@
   %h1= @post.title
   %p= @post.content
 
+  #comments
+    %h2= @post.comments.count #compte les commentaires
+    Comments
+    = render @post.comments 
+    = render "comments/form" #publier un commentaire
+    %h3 Reply
   = link_to "Modifier", edit_post_path(@post) #l'utilisateur peut modifier sa publication
   = link_to "Supprimer", post_path, method: :delete, data: { confirm: "Are you sure you want to do this?" } #il peut aussi la supprimer
   = link_to "Accueil", root_path #retour à l'accueil
