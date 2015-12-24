@@ -33,7 +33,7 @@ body {
     float: right;
     line-height: 60px;
 	background: #DC143C;
-    border-radius: .5em;
+    
     bottom: 0px;
     font-weight: 400;
     text-align: center;
@@ -55,11 +55,11 @@ body {
 }
 #posts {
 	background: white;
-    border-radius: 5px;
+    
 }
 #logo {
 	background: white;
-    border-radius: : 5px;
+    
     margin: 10px;
     color: #1E90FF;
     font-family: 'Indie Flower', cursive;
@@ -81,7 +81,7 @@ a {
 }
 #post_content {
     background: white;
-    border-radius: 5px;	
+    	
 }
 #post_content h1 {
 	font-weight: 100;
@@ -96,7 +96,7 @@ a {
 #post_content a {
 	font-size: 25px;
     background: #DC143C;
-    border-radius: .5em;
+  
 }
 .comment_replier {
     color: 	#1E90FF;
@@ -123,14 +123,16 @@ textarea {
 	margin-left: 20px;
 	min-height: 180px;
 	border: 1px solid #1E90FF;
-	border-radius:  .2em;
+
 	width: 95%;
+	 	font-family: 'Lato', sans-serif;
+
 }
 input[type="submit"] {
 	background: #1E90FF;
 	color: white;
 	padding: .5em 1em;
-	border-radius:  .2em;
+	
 }
 #comments h3 {
 	margin-left: 20px;
@@ -149,6 +151,6 @@ font-size: 25px;
 .wrapper a{
     font-size: 25px;
     background: #DC143C;
-    border-radius: .5em;
+    
 }
 /*fin du code qui sert à styler l'application "front end"*/
